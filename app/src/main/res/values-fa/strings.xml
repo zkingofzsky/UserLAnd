@@ -51,7 +51,6 @@
     <string name="prompt_app_connection_type_preference">لطفا نوع اتصال را تعیین کنید: </string>
 
     <!-- Notification strings -->
-    <string name="services_notification_channel_id">خدمات یوزرلند</string>
     <string name="services_notification_channel_name">خدمات</string>
     <string name="services_notification_channel_description">خدمات مداوم</string>
     <string name="service_notification_title">یوزرلند</string>
@@ -124,7 +123,6 @@
     <string name="session_unique_name_required">نام نشست‌ها باید یک‌تا باشد!</string>
     <string name="filesystem_unique_name_required">نام فایل‌سیستم‌ها باید یک‌تا باشد!</string>
     <string name="single_session_supported">یوزرلند در حال حاضر تنها از یک نشست فعال پشتیبانی می‌کند!</string>
-    <string name="no_supported_architecture">یوزرلند در حال حاضر از معماری دستگاه شما پیشتیبانی نمی‌کند.</string>
     <string name="debug_log_deleted">لاگ دیباگ یا پاک شده و یا وجود ندارد!</string>
 
     <!-- Content descriptions -->

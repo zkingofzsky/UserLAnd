@@ -15,8 +15,8 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import tech.ula.utils.AcraWrapper
-import tech.ula.utils.BuildWrapper
+import tech.ula.utils.Logger
+import tech.ula.utils.UlaFiles
 import java.io.IOException
 
 @RunWith(MockitoJUnitRunner::class)
@@ -24,11 +24,11 @@ class GithubApiClientTest {
 
     @get:Rule val server = MockWebServer()
 
-    @Mock lateinit var mockBuildWrapper: BuildWrapper
+    @Mock lateinit var mockUlaFiles: UlaFiles
 
     @Mock lateinit var mockUrlProvider: UrlProvider
 
-    @Mock lateinit var mockAcraWrapper: AcraWrapper
+    @Mock lateinit var mockLogger: Logger
 
     private val moshi = Moshi.Builder().build()
 
@@ -76,9 +76,9 @@ class GithubApiClientTest {
 
     @Before
     fun setup() {
-        whenever(mockBuildWrapper.getArchType()).thenReturn(testArch)
+        whenever(mockUlaFiles.getArchType()).thenReturn(testArch)
 
-        githubApiClient = GithubApiClient(mockBuildWrapper, mockUrlProvider, mockAcraWrapper)
+        githubApiClient = GithubApiClient(mockUlaFiles, mockUrlProvider, mockLogger)
     }
 
     @After
@@ -93,7 +93,7 @@ class GithubApiClientTest {
 
     @Test
     fun `JsonClass correctly generate ReleasesResponse`() {
-        val adapter = moshi.adapter<GithubApiClient.ReleasesResponse>(GithubApiClient.ReleasesResponse::class.java)
+        val adapter = moshi.adapter(GithubApiClient.ReleasesResponse::class.java)
         val releasesResponse: GithubApiClient.ReleasesResponse = adapter.fromJson(json)!!
 
         assertEquals(testUrl, releasesResponse.url)
@@ -142,7 +142,7 @@ class GithubApiClientTest {
 
         runBlocking { githubApiClient.getAssetsListDownloadUrl(testRepo) }
 
-        verify(mockAcraWrapper.logException(IOException()))
+        verify(mockLogger.addExceptionBreadcrumb(IOException()))
     }
 
     @Test
@@ -185,7 +185,7 @@ class GithubApiClientTest {
 
         runBlocking { githubApiClient.getLatestReleaseVersion(testRepo) }
 
-        verify(mockAcraWrapper.logException(IOException()))
+        verify(mockLogger.addExceptionBreadcrumb(IOException()))
     }
 
     @Test
@@ -228,7 +228,7 @@ class GithubApiClientTest {
 
         runBlocking { githubApiClient.getAssetEndpoint(testAssetType, testRepo) }
 
-        verify(mockAcraWrapper).logException(IOException())
+        verify(mockLogger).addExceptionBreadcrumb(IOException())
     }
 
     @Test

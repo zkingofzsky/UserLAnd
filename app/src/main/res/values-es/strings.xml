@@ -51,9 +51,6 @@
     <string name="error_username_in_blacklist">Este nombre de usuario puede estar reservado por Linux y no puede ser usado como nombre de usuario para el sistema de archivos.</string>
     <string name="error_filesystem_name_invalid_characters">La longitud de el nombre del sistema de archivos debe ser entre 1 y 50 caracteres excluyendo caracteres como \"/:*\\|</string>
     <string name="error_export_execution_failure">La exportación falló, Razón: %1$s</string>
-    <string name="error_export_to_local_failed">La exportación al directorio local falló.</string>
-    <string name="error_export_to_external_failed">La exportación al directorio externo falló. Un respaldo con el mismo nombre ya existe.</string>
-    <string name="error_export_to_external_failed_no_data">La exportación al directorio externo falló, el archivo a exportar no tiene datos.</string>
 
 
     <!-- Illegal State Dialog -->
@@ -89,7 +86,6 @@
     <string name="prompt_app_connection_type_preference">Seleccione el tipo de conexión: </string>
 
     <!-- Notification strings -->
-    <string name="services_notification_channel_id">ServiciosDeUserLAnd</string>
     <string name="services_notification_channel_name">Servicios</string>
     <string name="services_notification_channel_description">Servicios persistentes</string>
     <string name="service_notification_title">UserLAnd</string>
@@ -177,7 +173,6 @@
     <string name="session_unique_name_required">¡Las sesiones requieren un nombre único!</string>
     <string name="filesystem_unique_name_required">¡Los sistemas de archivos requieren un nombre único!</string>
     <string name="single_session_supported">¡UserLAnd por ahora sólo soporta una sesión activa!</string>
-    <string name="no_supported_architecture">UserLAnd por ahora no soporta la arquitectura de tu dispositivo.</string>
     <string name="debug_log_deleted">¡El archivo de registro de depuración fue eliminado o es inexistente!</string>
 
     <!-- Content descriptions -->

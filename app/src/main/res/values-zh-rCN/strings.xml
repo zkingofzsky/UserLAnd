@@ -38,7 +38,6 @@
     <string name="prompt_filesystem">文件系统：</string>
     <string name="prompt_service_type">服务类别：</string>
     <string name="prompt_client_type">客户端类别：</string>
-    <string name="services_notification_channel_id">UserLAnd服务</string>
     <string name="services_notification_channel_name">服务</string>
     <string name="services_notification_channel_description">永久服务</string>
     <string name="service_notification_title">UserLAnd</string>
@@ -93,7 +92,6 @@
     <string name="session_unique_name_required">此会话需要一个特殊的名字！</string>
     <string name="filesystem_unique_name_required">文件系统需要一个特殊的名字！</string>
     <string name="single_session_supported">UserLAnd目前仅支持一个会话！</string>
-    <string name="no_supported_architecture">UserLAnd目前无法支持您的设备.</string>
     <string name="debug_log_deleted">除错日志已被删除或者不存在！</string>
     <string name="desc_arrow">图像：箭头指示会话与文件系统之间的关系</string>
     <string name="desc_filesystem_type">图像：分发图标</string>
@@ -106,6 +104,11 @@
         点击“是的”将会清除支持的文件。但这不会发生在安装的应用程序的文件的。
         点击“是的”将会导致在下次运行会话或应用程序时再下载资源。
     </string>
+    <string name="info_xsdl_support">Android 9.0及更高版本尚不完全支持XSDL</string>
     <string name="alert_clear_support_files_clear_button">清除</string>
-
+    <string name="review_is_user_enjoying">正在享受 UserLAnd吗？</string>
+    <string name="review_ask_for_rating">可以在 Play商店上为我们评分吗？</string>
+    <string name="review_ask_for_feedback">您介意在GitHub上给我们一些反馈吗？</string>
+    <string name="q_warning_title">文件访问权限已更改!</string>
+   <string name="q_warning_message">Android Q的下一个版本的正在改进安全性，会影响我们的应用程序以及用户如何从UserLAnd上的文件系统中获取文件。为了遵守这些更改，将sdcard内的文件移入和移出将不再像过去那样。请访问我们的Github上的Wiki了解更多信息.</string>
 </resources>

@@ -52,9 +52,6 @@
     <string name="error_username_in_blacklist">使用者名稱可能被 Linux 保留，不能用於檔案系統的使用者名稱。</string>
     <string name="error_filesystem_name_invalid_characters">檔案系統名稱必須在1到50個字元間，且不能有如 \"/:*\\| 等符號</string>
     <string name="error_export_execution_failure">匯出失敗。理由：%1$s</string>
-    <string name="error_export_to_local_failed">匯出到本機目錄失敗。</string>
-    <string name="error_export_to_external_failed">匯出到外部目錄失敗。可能已存在相同名稱的備份。</string>
-    <string name="error_export_to_external_failed_no_data">匯出到外部目錄失敗，已匯出的檔案沒有資料。</string>
 
     <!-- Illegal State Dialog -->
     <string name="illegal_state_title">UserLAnd 已進入違規狀態！</string>
@@ -73,12 +70,6 @@
     <string name="illegal_state_no_session_selected_when_preparation_started">嘗試在選取前處理工作階段準備事宜。</string>
     <string name="illegal_state_error_fetching_asset_lists">擷取資源清單失敗。</string>
     
-    <string name="illegal_state_unexpected_generation_size">
-        生成下載需求時發現非預期的大小。
-    </string>
-    <string name="illegal_state_unexpected_generation_type">
-        生成下載需求時發現非預期的類型。
-    </string>
     <string name="illegal_state_remote_unreachable_during_generation">
         生成下載需求時無法連線到遠端主機。請確定您的網路
         連線夠穩定，然後再試一次。
@@ -88,7 +79,6 @@
     <string name="illegal_state_failed_to_copy_assets_to_local">複製資源至本機儲存空間失敗。嘗試清除支援檔案。</string>
     <string name="illegal_state_assets_have_not_been_downloaded">資源必須複製到您的檔案系統，但看起來它們還沒被下載。嘗試清除支援檔案。</string>
     <string name="illegal_state_empty_download_cache_access">試圖存取時，下載快取被清空。</string>
-    <string name="illegal_state_download_cache_access_in_incorrect_state">下載快取在不支援的狀態時被存取。</string>
     <string name="illegal_state_failed_to_copy_assets_to_filesystem">複製資源到檔案系統失敗。</string>
     <string name="illegal_state_failed_to_extract_filesystem">解壓縮檔案系統失敗。嘗試清除支援檔案。失敗理由：%1$s</string>
     <string name="illegal_state_failed_to_clear_support_files">清除支援檔案失敗。</string>
@@ -105,7 +95,6 @@
     <string name="prompt_install_file_manager">請安裝檔案管理員</string>
 
     <!-- Notification strings -->
-    <string name="services_notification_channel_id">UserLAndServices</string>
     <string name="services_notification_channel_name">服務</string>
     <string name="services_notification_channel_description">永久服務</string>
     <string name="service_notification_title">UserLAnd</string>
@@ -204,7 +193,6 @@
     <string name="session_unique_name_required">工作階段必須有獨一無二的名稱！</string>
     <string name="filesystem_unique_name_required">檔案系統必須有獨一無二的名稱！</string>
     <string name="single_session_supported">UserLAnd 目前僅支援單一個作用中的工作階段！</string>
-    <string name="no_supported_architecture">UserLAnd 目前並不支援您的裝置架構。</string>
     <string name="debug_log_deleted">除錯紀錄檔已被刪除或不存在！</string>
 
     <!-- Content descriptions -->
